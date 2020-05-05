@@ -14,7 +14,6 @@ import java.io.File;
 import java.io.IOException;
 import javax.sound.sampled.*;
 
-
 public class Chess implements ActionListener{
     JFrame f;
     JPanel p1,p2,p3;
@@ -37,6 +36,7 @@ public class Chess implements ActionListener{
     Chess()
     {
         f=new JFrame("Chess");
+        f.getRootPane().setBorder(BorderFactory.createMatteBorder(30,30,30,30, new Color(193,154,107)));
         b=new JButton[8][8];
         for(int i=0;i<8;i++)
             for(int j=0;j<8;j++)
